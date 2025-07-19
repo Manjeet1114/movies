@@ -1,0 +1,20 @@
+<h2>🎬 Movie Database</h2>
+
+<input [(ngModel)]="searchTerm" (input)="searchMovies()" placeholder="Search..." />
+
+<ul>
+  <li *ngFor="let movie of movies">
+    <strong>{{ movie.title }}</strong> ({{ movie.year }}) - Rating: {{ movie.rating || 'N/A' }}
+    <div>
+      Rate:
+      <button *ngFor="let star of [1,2,3,4,5]" (click)="rateMovie(movie.id, star)">
+        {{ star }}★
+      </button>
+    </div>
+  </li>
+</ul>
+
+<h3>Add New Movie</h3>
+<input #title placeholder="Title" />
+<input #year type="number" placeholder="Year" />
+<button (click)="addMovie(title.value, +year.value)">Add Movie</button>

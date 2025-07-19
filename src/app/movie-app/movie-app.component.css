@@ -1,0 +1,88 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Movie List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #007BFF;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #f0f8ff;
+}
+
+/* Movie Info */
+strong {
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.rating {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+/* Rating Buttons */
+button {
+  background-color: #007BFF;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add Movie Form */
+.add-movie {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.add-movie input {
+  margin-bottom: 12px;
+}
+
+.add-movie button {
+  align-self: flex-start;
+}
